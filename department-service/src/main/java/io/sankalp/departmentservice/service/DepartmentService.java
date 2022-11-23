@@ -13,12 +13,12 @@ public class DepartmentService {
     @Autowired
     private DepartmentRepository repository;
 
-    public Department saveDepartment(Department department) {
+    public Department saveDepartment( Department department ) {
         log.info ( "Inside saveDepartment () method of DepartmentService." );
         return repository.save ( department );
     }
 
-    public Department findDepartmentById(Long departmentId) {
+    public Department findDepartmentById( Long departmentId ) {
         log.info ( "Inside findDepartmentById () method in DepartmentRespository " );
         return repository.findByDepartmentId ( departmentId );
     }
